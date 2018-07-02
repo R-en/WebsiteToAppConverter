@@ -8,5 +8,7 @@ Known Bug(s)
 -------------------
 JW Player is currently not supported
 
+![](images/youtube.png)
+
 Version 1.0
 Date 7/2/18
