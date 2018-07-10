@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         myWebView.getSettings().setAllowFileAccess(true);
         myWebView.getSettings().setUseWideViewPort(true);
         myWebView.getSettings().setLoadWithOverviewMode(true);
+        myWebView.getSettings().setDomStorageEnabled(true);
         myWebView.setWebChromeClient(new WebChromeClient());
         myWebView.getSettings().setPluginState(WebSettings.PluginState.ON);
 
@@ -46,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 super.onPageFinished(view, url);
             }
         });
-        myWebView.loadUrl("https://www.youtube.com/");
+        //myWebView.loadUrl("https://www.youtube.com/");
         myWebView.setVisibility(View.VISIBLE);
-        //myWebView.loadUrl("https://www.cnn.com/2018/07/02/us/toys-r-us-buyer-donation-trnd/index.html");
+        myWebView.loadUrl("https://www.cnn.com/2018/07/02/us/toys-r-us-buyer-donation-trnd/index.html");
     }
 
     @Override
